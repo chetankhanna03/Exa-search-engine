@@ -25,7 +25,7 @@ exa_client = exa_py.Exa(api_key=exa_api_key)
 @app.route('/')
 def home():
     """Render the search page"""
-    return render_template('search-engine-frontend.html')  # Ensure file name matches
+    return render_template('search_engine_frontend.html')   # Ensure file name matches
 
 @app.route('/search', methods=['POST'])
 def search():
